@@ -6,6 +6,29 @@ ReactNative 圆形进度条
 
 >技术点：需要`ART`，`iOS`和`Android`自行导入
 
+```
+Progress.publicFunction = {
+    setProgress: PropTypes.func, // 设置进度 取值范围 0 - 1
+};
+
+Progress.propTypes = {
+    radius: PropTypes.number, // 半径
+    annularHeight: PropTypes.number, // 内环高度
+    startAngle: PropTypes.number, // 开始角度 0 - 1
+    currentAngle: PropTypes.number, // 当前角度 0 - 1
+    bgColor: PropTypes.string, // 内环背景填充颜色
+    selectColor: PropTypes.string, // 内环背景选中填充颜色
+};
+
+Progress.defaultProps = {
+    radius: 50,
+    annularHeight: 2,
+    startAngle: 0, // 0 - 1
+    currentAngle: 0, // 0 - 1
+    bgColor: '#f5f5f5',
+    selectColor: 'blue'
+};
+```
 
 # 使用一：只要圆环效果
 ```
