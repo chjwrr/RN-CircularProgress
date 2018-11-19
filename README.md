@@ -7,7 +7,6 @@ ReactNative 圆形进度条
 >技术点：需要`ART`，`iOS`和`Android`自行导入
 
 
-```
 #使用一：只要圆环效果
 ```
  <Progress ref={(ref)=>this.progress = ref} />
